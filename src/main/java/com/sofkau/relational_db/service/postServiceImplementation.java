@@ -1,13 +1,15 @@
-package com.sofkau.relationalDB.service;
+package com.sofkau.relational_db.service;
 
-import com.sofkau.relationalDB.entity.Comment;
-import com.sofkau.relationalDB.entity.Post;
-import com.sofkau.relationalDB.repository.CommentRepository;
-import com.sofkau.relationalDB.repository.PostRepository;
+import com.sofkau.relational_db.entity.Comment;
+import com.sofkau.relational_db.entity.Post;
+import com.sofkau.relational_db.repository.CommentRepository;
+import com.sofkau.relational_db.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class postServiceImplementation implements PostService {
     @Autowired
     private PostRepository postRepository;
@@ -22,7 +24,7 @@ public class postServiceImplementation implements PostService {
 
     @Override
     public Post createComment(Comment comment) {
-        Post post = postRepository.findById(comment.getFK_post_id()).get();
+        Post post = postRepository.findById(comment.getFkPostId()).get();
         post.addComment(comment);
         commentRepository.save(comment);
         return postRepository.save(post);

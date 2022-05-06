@@ -1,4 +1,4 @@
-package com.sofkau.relationalDB;
+package com.sofkau.relational_db;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

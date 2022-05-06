@@ -1,4 +1,4 @@
-package com.sofkau.relationalDB;
+package com.sofkau.relational_db;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

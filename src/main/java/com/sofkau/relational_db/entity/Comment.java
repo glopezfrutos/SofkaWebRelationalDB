@@ -1,4 +1,4 @@
-package com.sofkau.relationalDB.entity;
+package com.sofkau.relational_db.entity;
 
 import lombok.Data;
 
@@ -18,5 +18,5 @@ public class Comment {
 
     private String message;
 
-    private Long FK_post_id;
+    private Long fkPostId;
 }

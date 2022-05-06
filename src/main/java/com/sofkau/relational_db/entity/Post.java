@@ -1,4 +1,4 @@
-package com.sofkau.relationalDB.entity;
+package com.sofkau.relational_db.entity;
 
 import lombok.Data;
 

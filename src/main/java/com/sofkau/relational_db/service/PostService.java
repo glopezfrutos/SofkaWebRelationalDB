@@ -1,12 +1,10 @@
-package com.sofkau.relationalDB.service;
+package com.sofkau.relational_db.service;
 
-import com.sofkau.relationalDB.entity.Comment;
-import com.sofkau.relationalDB.entity.Post;
-import org.springframework.stereotype.Service;
+import com.sofkau.relational_db.entity.Comment;
+import com.sofkau.relational_db.entity.Post;
 
 import java.util.List;
 
-@Service
 public interface PostService {
     Post createPost(Post post);
 

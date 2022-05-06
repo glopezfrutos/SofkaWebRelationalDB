@@ -1,6 +1,6 @@
-package com.sofkau.relationalDB.repository;
+package com.sofkau.relational_db.repository;
 
-import com.sofkau.relationalDB.entity.Post;
+import com.sofkau.relational_db.entity.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
